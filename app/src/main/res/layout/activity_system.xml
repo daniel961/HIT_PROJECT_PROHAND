@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RootSystemDrawerLayout"
+    android:layoutDirection="ltr"
+
+    >
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="210dp"
+        android:layout_height="570dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="57dp"
+        android:background="@color/BetterBlack"
+        app:itemTextColor="@color/lightorange"
+        app:itemIconTint="@color/lightorange"
+        app:menu="@menu/drawermenu"
+        android:id="@+id/menuDrawer"
+        app:headerLayout="@layout/navigation_drawer_header"
+
+
+
+        >
+
+
+    </android.support.design.widget.NavigationView>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/system_wall2"
+        android:id="@+id/SystemLayout"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/BetterBlack"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/SystemToolbar"
+            android:alpha="1"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            >
+
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/prohand_logo_small"
+                android:layout_gravity="center"
+           />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="שלום "
+                android:textColor="@color/White"
+                android:id="@+id/tvWelcome"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"/>
+
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainContainer">
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/AppSettingsLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="85dp"
+                android:gravity="center"
+                android:text="הגדרות אפליקציה"
+                android:textColor="@color/White"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="129dp"
+                android:gravity="center"
+                android:text="בחר את ערכת הנושא הרצויה:"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="190dp">
+
+                <Button
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="כחול"
+                android:id="@+id/BlueThemeBtn"
+                android:textSize="25sp"
+                android:background="@drawable/buttonstyle5"
+                android:layout_marginLeft="25dp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:text="שחור"
+                    android:id="@+id/BlackThemeBtn"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttonstyle5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/AccountSettingsLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="85dp"
+                android:gravity="center"
+                android:text="שינוי פרטי משתמש"
+                android:textColor="@color/White"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="130dp"
+                android:gravity="center"
+                android:text="שנה פרטים ולחץ אישור במידת הצורך"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="190dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:hint="Full Name"
+                    android:textSize="25sp"
+                    android:textColorHint="@color/White"
+                    android:id="@+id/nameToChange_et"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:hint="Phone"
+                    android:textSize="25sp"
+                    android:textColorHint="@color/White"
+                    android:id="@+id/phoneToChange_et"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="אישור"
+                    android:textSize="20sp"
+                    android:background="@drawable/buttonstyle5"
+                    android:id="@+id/SubmitNameAndPhoneChange_btn"
+                    android:layout_marginTop="50dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

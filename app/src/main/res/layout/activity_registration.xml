@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:padding="10dp"
+    android:background="@drawable/register_wall"
+
+
+
+
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:background="@drawable/closebtn"
+            android:id="@+id/close_regisration_btn"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/register_type_layout">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="אני בעל מקצוע"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:alpha="0.9"
+
+            android:gravity="center"
+            android:background="@drawable/buttonstyle"
+            android:id="@+id/ProffesionalUser" />
+        <Button
+            android:layout_width="130dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="אני משתמש רגיל"
+            android:textColor="@color/White"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:alpha="0.9"
+            android:background="@drawable/buttonstyle4"
+            android:id="@+id/RegularUser" />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="420dp"
+        android:background="@drawable/buttonstyle"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:paddingTop="15dp"
+        android:alpha="0.7"
+        android:id="@+id/Register_Lay">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            >
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="אימייל"
+                android:inputType="textEmailAddress"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="סיסמא"
+                    android:inputType="textPassword"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/input_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="שם מלא"
+                    android:inputType="textPersonName"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/input_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="מספר טלפון"
+                    android:inputType="phone"/>
+            </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/profesional_details_extra_layout"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="בחר איזור עבודה"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="7dp"
+                        android:textStyle="bold"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="ירושלים"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:alpha="0.9"
+                            android:layout_marginLeft="16dp"
+                            android:background="@drawable/buttonstyle"
+                            android:id="@+id/jerusalem_area" />
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:text="צפון"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:alpha="0.9"
+                            android:background="@drawable/buttonstyle"
+                            android:id="@+id/north_area" />
+                        <Button
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:text="דרום"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:alpha="0.9"
+                            android:background="@drawable/buttonstyle"
+                            android:id="@+id/south_area" />
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:text="מרכז"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:alpha="0.9"
+                            android:background="@drawable/buttonstyle"
+                            android:id="@+id/center_area" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+        </ScrollView>
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="אישור"
+            android:textSize="25sp"
+            android:textColor="@color/White"
+            android:background="@color/colorPrimary2Blue"
+            android:id="@+id/btn_OKRegister"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home" android:title="עמוד ראשי" android:icon="@drawable/home"></item>
+    <item android:id="@+id/updateAccount" android:title="שינוי פרטים אישיים" android:icon="@drawable/ic_editaccount"></item>
+    <item android:id="@+id/appSettings" android:title="הגדרות אפליקציה" android:icon="@drawable/ic_settings"></item>
+    <item android:id="@+id/AboutUs" android:title="עלינו המפתחים" android:icon="@drawable/ic_baseline_about" ></item>
+    <item android:id="@+id/disconectUser" android:title="התנתק מהמשתמש" android:icon="@drawable/ic_logoff"></item>
+    <item android:id="@+id/exit" android:title="יציאה מהאפליקציה" android:icon="@drawable/ic_exitapp"></item>
+</menu>
+
+

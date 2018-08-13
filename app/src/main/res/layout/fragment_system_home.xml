@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SystemHomeFragment"
+
+
+
+
+    >
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="70dp"
+        android:id="@+id/recyclerView"
+        >
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/RegularUserGpsLayout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="15dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:text="הפעל GPS לאיתור מיקומך"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/lightorange"
+            android:id="@+id/tv_RegularUserText"/>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:text="נסה שוב לזהות מיקום"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonstyle"
+            android:id="@+id/btnGps"
+            />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="הצגת מיקום"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/lightorange"
+            android:id="@+id/locationToShow"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/UpdateProffesionalCategoryMSG"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="15dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:text="הפעל מחדש את האפליקציה לעדכון תפקידך"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/lightorange"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/customerComments"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="15dp">
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:text="כמות המדליות שלך:"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/lightorange"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:id="@+id/CurrentMedals_tv"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/lightorange"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/medal"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="המשתמש שלך גלוי במנועי החיפוש שלנו, המתן לשיחות טלפון מלקוחות"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="19dp"
+            android:textColor="@color/lightorange"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/RegularUserChosseCategory"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone"
+
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="בחר איזה טכנאי תרצה להזמין:"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/lightorange"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/tv_RegularUserCategoryTitle"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="טכנאי מזגנים"
+                   android:textSize="25sp"
+                   android:background="@drawable/buttonstyle"
+                   android:id="@+id/btnCategory0"
+                   android:layout_marginBottom="12dp"
+                   />
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="טכנאי מקררים"
+                   android:textSize="25sp"
+                   android:background="@drawable/buttonstyle"
+                   android:id="@+id/btnCategory1"
+                   android:layout_marginBottom="12dp"
+                   />
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="טכנאי מכונות כביסה"
+                   android:textSize="25sp"
+                   android:background="@drawable/buttonstyle"
+                   android:id="@+id/btnCategory2"
+                   android:layout_marginBottom="12dp"
+                   />
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="טכנאי תריסים חשמליים"
+                   android:textSize="25sp"
+                   android:background="@drawable/buttonstyle"
+                   android:id="@+id/btnCategory3"
+                   android:layout_marginBottom="12dp"
+                   />
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="טכנאי מחשבים"
+                   android:textSize="25sp"
+                   android:background="@drawable/buttonstyle"
+                   android:id="@+id/btnCategory4"
+                   android:layout_marginBottom="12dp"
+                   />
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="טכנאי מצלמות"
+                   android:textSize="25sp"
+                   android:background="@drawable/buttonstyle"
+                   android:id="@+id/btnCategory5"
+                   android:layout_marginBottom="12dp"
+                   />
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="טכנאי מדיח כלים"
+                   android:textSize="25sp"
+                   android:background="@drawable/buttonstyle"
+                   android:id="@+id/btnCategory6"
+                   android:layout_marginBottom="12dp"
+                   />
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="טכנאי מוצרי חשמל כללי"
+                   android:textSize="25sp"
+                   android:background="@drawable/buttonstyle"
+                   android:id="@+id/btnCategory7"
+                   android:layout_marginBottom="12dp"
+                   />
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="טכנאי סלולר"
+                   android:textSize="25sp"
+                   android:background="@drawable/buttonstyle"
+                   android:id="@+id/btnCategory8"
+                   android:layout_marginBottom="12dp"
+                   />
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="טכנאי תנורים"
+                   android:textSize="25sp"
+                   android:background="@drawable/buttonstyle"
+                   android:id="@+id/btnCategory9"
+                   android:layout_marginBottom="12dp"
+                   />
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="טכנאי טלוויזיות"
+                   android:textSize="25sp"
+                   android:background="@drawable/buttonstyle"
+                   android:id="@+id/btnCategory10"
+                   android:layout_marginBottom="12dp"
+                   />
+
+
+
+
+           </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/PROUserChosseCategory"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone"
+
+
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="שלום המערכת זיהתה שזו כניסתך הראשונה אנא בחר איזה סוג טכנאי אתה"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/lightorange"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/tv_PROUserCategoryTitle"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="טכנאי מזגנים"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttonstyle"
+                    android:id="@+id/PRObtnCategory0"
+                    android:layout_marginBottom="12dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="טכנאי מקררים"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttonstyle"
+                    android:id="@+id/PRObtnCategory1"
+                    android:layout_marginBottom="12dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="טכנאי מכונות כביסה"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttonstyle"
+                    android:id="@+id/PRObtnCategory2"
+                    android:layout_marginBottom="12dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="טכנאי תריסים חשמליים"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttonstyle"
+                    android:id="@+id/PRObtnCategory3"
+                    android:layout_marginBottom="12dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="טכנאי מחשבים"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttonstyle"
+                    android:id="@+id/PRObtnCategory4"
+                    android:layout_marginBottom="12dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="טכנאי מצלמות"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttonstyle"
+                    android:id="@+id/PRObtnCategory5"
+                    android:layout_marginBottom="12dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="טכנאי מדיח כלים"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttonstyle"
+                    android:id="@+id/PRObtnCategory6"
+                    android:layout_marginBottom="12dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="טכנאי מוצרי חשמל כללי"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttonstyle"
+                    android:id="@+id/PRObtnCategory7"
+                    android:layout_marginBottom="12dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="טכנאי סלולר"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttonstyle"
+                    android:id="@+id/PRObtnCategory8"
+                    android:layout_marginBottom="12dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="טכנאי תנורים"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttonstyle"
+                    android:id="@+id/PRObtnCategory9"
+                    android:layout_marginBottom="12dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="טכנאי טלוויזיות"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttonstyle"
+                    android:id="@+id/PRObtnCategory10"
+                    android:layout_marginBottom="12dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

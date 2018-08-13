@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ROOTloginFrameLayout"
+
+
+    >
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/house_wall"
+
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="35dp">
+            <TextView
+                android:layout_width="351dp"
+                android:layout_height="144dp"
+                android:background="@drawable/prohand_logo_smaller"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="345dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonstyle"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:alpha="0.8"
+            android:visibility="visible"
+            android:id="@+id/l2">
+
+            <TextView
+                android:textColor="@color/Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="כבר יש לך חשבון?"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:layout_marginTop="0dp"
+                android:textStyle="bold"
+
+
+                />
+
+            <TextView
+                android:textColor="@color/Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="אימייל:"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="הקש לכתיבה"
+                android:backgroundTint="@color/colorPrimary2Blue"
+                android:id="@+id/EtConnectEmail"
+                />
+            <TextView
+                android:textColor="@color/Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="סיסמא:"
+
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="הקש לכתיבה"
+                android:backgroundTint="@color/colorPrimary2Blue"
+                android:id="@+id/EtConnectPassword"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="התחבר"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:textColor="@color/White"
+                android:background="@color/colorPrimary2Blue"
+                android:id="@+id/btnConnect"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="הרשם"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:textColor="@color/White"
+                android:background="@color/colorAccent"
+                android:id="@+id/btnregistration"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

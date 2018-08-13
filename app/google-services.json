@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "943179820626",
+    "firebase_url": "https://hit-project-prohand.firebaseio.com",
+    "project_id": "hit-project-prohand",
+    "storage_bucket": "hit-project-prohand.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943179820626:android:885e91d1542311d2",
+        "android_client_info": {
+          "package_name": "com.hit.daniel.hit_project_prohand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943179820626-rqvpkhmdknshbij4ve4glgre09uhpr6h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hit.daniel.hit_project_prohand",
+            "certificate_hash": "1652b75ccc630ba3753f81953c3ca12ed1d205de"
+          }
+        },
+        {
+          "client_id": "943179820626-0f0qbsfk8coc6ifffr0mr098ounn6i9o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXkoAeQpR3n6-iPL4hQPwIF06PRxlA7f4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943179820626-0f0qbsfk8coc6ifffr0mr098ounn6i9o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
